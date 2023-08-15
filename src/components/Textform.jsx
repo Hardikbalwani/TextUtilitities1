@@ -26,6 +26,12 @@ export default function Textform(props) {
     document.getSelection().removeAllRanges(); 
     props.showAlert(" Copied to Clipboard","success");
   }
+
+  const handleExtraSpaces = () => {
+    let newtext = text.split(/[ ]+/);
+    setText(newtext.join(" "));
+    props.showAlert("Extra spaces removed!","success");
+  }
   
 
   const handleOnchange = (event) => {
@@ -49,6 +55,7 @@ export default function Textform(props) {
   <button disabled={text.length === 0} onClick={handleLowClick} className="btn btn-primary mx-2 my-1">Convert to LowerCase</button>
   <button disabled={text.length === 0} onClick={handleClearClick} className="btn btn-primary mx-2 my-1">Clear Text</button>
   <button disabled={text.length === 0} onClick={handleCopy} className="btn btn-primary mx-2 my-1">Copy Text</button>
+  <button disabled={text.length === 0} onClick={handleExtraSpaces} className="btn btn-primary mx-2 my-1">Remove Extra Spaces</button>
   </div>
 
    <div className="container my-3" style={{color: props.mode==='dark'?'white':'black'}}>
