@@ -12,7 +12,6 @@ Welcome to the official documentation for TextUtilities – a web application de
 4. Usage Guide
    - Text Analysis
    - Case Conversion
-   - Lorem Ipsum Generator
 5. Technologies Used
 6. Acknowledgments
 7. Contact Information
