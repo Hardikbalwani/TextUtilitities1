@@ -26,7 +26,6 @@ TextUtilities provides the following features:
 
 - **Text Analysis:** Count the number of characters, words, and paragraphs in a given text.
 - **Case Conversion:** Convert text between uppercase, lowercase, title case, and sentence case.
-- **Lorem Ipsum Generator:** Generate placeholder text for use in design mockups and layout testing.
 
 ## 3. Installation and Setup
 
